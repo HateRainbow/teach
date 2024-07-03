@@ -1,51 +1,46 @@
-function onLoad(){
 
 
-    hello();
+var counter = 0;
+
+function onLoad() {
+  doThings();
+}
+
+function doThings() {
+
+    
+ 
+
+
+//   startDelay();
+}
+
+function startDelay() {
+  var myVar = setTimeout(onTimer, 1000);
+}
+
+function onTimer() {
+  console.log("ping");
+
+
+
+
+  document.getElementById('body').appendChild(getDiv());
+
+  startDelay();
 }
 
 
-function hello(){
+function getDiv(){
+    var div = document.createElement('div');
+    var img = document.createElement('img');
+    img.src = "img/wizard.jpg";
+    var txt = document.createElement('h1');
+    txt.innerHTML = "thing";
 
-    console.log("hello-asd");
+    div.appendChild(img);
+    div.appendChild(txt);
 
-    var thing = "string";
-
-    var i = 1;
-
-    var newString = returnAString();
-
-
-    for(var i=0 ; i<100 ; i++){
-        console.log(i);
-    }
-
-
-    var boolTing = "true";
-    var boolTing = true;
-    var boolTing = 1;
-
-    if(boolTing === true){
-
-    }
-
-    boolTing = true
-    boolTing == true
-    boolTing === true
-
-    
-
-    
-
-
-}
-
-
-function returnAString(){
-
-    var aString = "blah";
-
-    return aString;
-
+    return div;
 
 }
