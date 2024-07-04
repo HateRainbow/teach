@@ -1,0 +1,21 @@
+body {
+  background-position: 0%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  color: whitesmoke;
+}
+
+#title {
+  text-align: center;
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+image {
+  height: 0px;
+  width: 0px;
+}
